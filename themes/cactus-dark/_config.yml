@@ -1,7 +1,6 @@
 nav:
   Home: /
   About: /about/
-  Writing: /archives/
   Projects: http://github.com/kernowjoe
 
 projects_url: http://github.com/kernowjoe
@@ -31,7 +30,7 @@ customize:
         twitter: https://twitter.com/joeprisk
         linkedin: https://www.linkedin.com/in/joe-prisk-b9a7252a
         bicycle: https://www.strava.com/athletes/561031
-    post_count: 10
+    post_count: 100
     highlight: androidstudio
 
 # RSS

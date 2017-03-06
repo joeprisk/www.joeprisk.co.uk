@@ -71,3 +71,13 @@ theme: cactus-dark
 deploy:
   type:
 
+jsonContent:
+  meta: true
+  keywords: false # language name option
+  dateFormat:  YYYY-MM-DD # format string
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    permalink: true
