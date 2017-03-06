@@ -1,0 +1,51 @@
+nav:
+  Home: /
+  About: /about/
+  Writing: /archives/
+  Projects: http://github.com/kernowjoe
+
+projects_url: http://github.com/kernowjoe
+
+customize:
+    gravatar:
+        email:
+    logo:
+        enabled: true
+        width: 50
+        height: 50
+        url: /images/profile.jpg
+        gravatar: false
+    favicon:
+      # eg. generate with http://realfavicongenerator.net/
+      desktop:
+        url: /images/favicon.ico
+        gravatar: false
+      android:
+        url: /images/favicon-192x192.png
+        gravator: false
+      apple:
+        url: /images/apple-touch-icon.png
+        gravator: false
+    social_links:
+        github: https://github.com/kernowjoe
+        twitter: https://twitter.com/joeprisk
+        linkedin: https://www.linkedin.com/in/joe-prisk-b9a7252a
+        bicycle: https://www.strava.com/athletes/561031
+    post_count: 10
+    highlight: androidstudio
+
+# RSS
+rss: false
+
+# Plugins
+plugins:
+    disqus_shortname: # Disqus Comments Shortname
+    google_analytics: xx-xxxxxx-x # UA-86660611-1 # enter the tracking ID for your Google Analytics
+
+# Miscellaneous
+miscellaneous:
+    open_graph: # see http://ogp.me
+        fb_app_id:
+        fb_admins:
+        twitter_id:
+        google_plus:
