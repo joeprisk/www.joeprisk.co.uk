@@ -7,6 +7,7 @@ tags:
 - development
 banner: hook.jpg
 ---
+
 Git hooks can be used for a number of different uses, The main things we use them for are unit testing prior to a commit (pre-commit) and, checking out code on a remote repository after it receive a push (post-receive).
 
 *-- We have since moved away from this method of using post-recieve hooks to check out code, as it only allows you to move forward and not backwards --*
