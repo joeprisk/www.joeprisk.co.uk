@@ -1,3 +1,4 @@
 # Redirects that need to be manually cpied across and not part of the hexo build
 
-/tag/*  /tags/:splat
+/tag/*  /tags/:splat 301
+/author/joe/page/2/ /   301
