@@ -5,8 +5,10 @@ date: 2017-03-07 12:27:56
 tags: 
 - continuous deployment
 - gitlab
-banner: enter-key.jpg
+banner: continuous-delivery-graphic.png
 ---
+
+# continuous deployment
 
 Continuous deployment isn't just pushing code!
 
@@ -20,16 +22,16 @@ you have to be inventive
 
 never try and do everything at once, you'll blow all the budget it will be wrong
 
-### Build process
+## Build process
 
 An important part, for obvious reasons is the build pipeline, some may argue it is continuous deployment, in my thoughts this is just a part of it. gone are the old days, and rightly so, of manually ftping files to a server. Thesse days, with the glorious rise of nodejs creating an automated build is a relatively straight forward thing.
 
-### Automated testing
+## Automated testing
 
 This is the key part and what makes the whole thing possible. As pushing code to a server is relativley simple thing, but pushing code irect to live with the confidence that it's not going to break, now that is something awesome!
 Lots of different sorts of testing and many projects will require different levels depending on the project. I tend to think a heavy load on unit testing
 
-### Deployment 
+## Deployment 
 
 The act of automatically getting code to arrive on to a production server in a working state.
 
