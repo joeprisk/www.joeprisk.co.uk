@@ -85,7 +85,7 @@ $(document).ready(function () {
 (function () {
 
 	let toc     = document.getElementById('toc'),
-		anchors = toc.getElementsByTagName('a');
+		anchors = !!toc ? toc.getElementsByTagName('a') : [];
 
 	for (let z = 0; z < anchors.length; z++) {
 
