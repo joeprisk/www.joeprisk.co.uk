@@ -1,0 +1,3 @@
+# Redirects that need to be manually cpied across and not part of the hexo build
+
+/tag/*  /tags/:splat
