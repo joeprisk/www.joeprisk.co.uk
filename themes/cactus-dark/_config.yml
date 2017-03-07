@@ -40,6 +40,7 @@ rss: false
 plugins:
     disqus_shortname: # Disqus Comments Shortname
     google_analytics: UA-32020580-1 # UA-86660611-1 # enter the tracking ID for your Google Analytics
+    go_squared: GSN-965933-T # Go Squared tracking
 
 # Miscellaneous
 miscellaneous:
