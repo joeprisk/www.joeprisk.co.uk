@@ -15,7 +15,7 @@
 </section>
 
 <section id="writing">
-  <span class="h1"><a href="<%- url_for("archives") %>">Writing</a></span>
+  <span class="h1"><a href="<%- url_for("archives") %>">Writings/ramblings</a></span>
   <ul class="post-list">
     <% site.posts.sort('date', 'desc').limit(theme.customize.post_count || 5).each(function(post, i){ %>
       <li class="post-item">
@@ -26,13 +26,26 @@
   </ul>
 </section>
 
-<% if (site.data.projects) { %>
+<% if (!site.data.projects) { %>
 <section id="projects">
   <span class="h1"><a href="<%- url_for(theme.projects_url) %>">Projects</a></span>
   <ul class="project-list">
     <% for(var obj in site.data.projects){ %>
       <li class="project-item">
         <a href="<%= site.data.projects[obj].url %>"><%= site.data.projects[obj].name %></a>: <%= site.data.projects[obj].desc %>
+      </li>
+    <% } %>
+  </ul>
+</section>
+<% } %>
+<% if (site.data.tweets) { %>
+<section id="tweets">
+  <span class="h1">Recent Tweets</span>
+  <ul class="project-list">
+    <% for(var obj in site.data.tweets){ %>
+      <li class="tweet">
+        <%= site.data.tweets[obj].text %>
+        <a href="<%= site.data.tweets[obj].url %>"><%= site.data.tweets[obj].created %></a>
       </li>
     <% } %>
   </ul>
