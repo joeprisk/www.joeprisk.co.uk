@@ -70,7 +70,7 @@ gulp.task('twitter', (cb) => {
 
 gulp.task('redirects', (cb) => {
     console.log("Moving all static hosts files");
-    gulp.src("_redirects")
+    gulp.src("static/*")
         .pipe(gulp.dest('dist'));
 
 
