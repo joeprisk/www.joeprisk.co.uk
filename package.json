@@ -7,7 +7,10 @@
   },
   "scripts": {
     "build": "gulp build",
-    "server": "hexo server"
+    "server": "hexo server",
+    "generate": "hexo generate",
+    "publish": "hexo publish",
+    "new": "hexo new"
   },
   "dependencies": {
     "hexo": "^3.2.0",
