@@ -35,11 +35,11 @@ Building static front end templates is also relatively painless process, there a
 
 This is the key part and what makes the whole thing possible. As pushing code to a server is relativley simple thing, but pushing code direct to live with the confidence that it's not going to break, now that is something awesome!
 
-There are different methods for testing, with people favouring different ends of the spectrum, 
+There are different methods for testing, with people favouring different ends of the spectrum, [Testing pyramid](https://martinfowler.com/bliki/TestPyramid.html)
 
-+     --end to end--
-+   -- integration  --
-+ --    unit testing    --
+![testing pyramid](https://martinfowler.com/bliki/images/testPyramid/test-pyramid.png)
+
+
 
 I would tend to sway towards a heavy load on the unit tests and to use end to end as more smoke tests to test the whole things hasn't fallen, rather than relying havily on what are pretty fragile tests.
 
