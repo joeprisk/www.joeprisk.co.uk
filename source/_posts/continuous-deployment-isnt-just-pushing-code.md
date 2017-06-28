@@ -37,9 +37,9 @@ This is the key part and what makes the whole thing possible. As pushing code to
 
 There are different methods for testing, with people favouring different ends of the spectrum, 
 
-     --end to end--
-   -- integration  --
---    unit testing    --
++     --end to end--
++   -- integration  --
++ --    unit testing    --
 
 I would tend to sway towards a heavy load on the unit tests and to use end to end as more smoke tests to test the whole things hasn't fallen, rather than relying havily on what are pretty fragile tests.
 
