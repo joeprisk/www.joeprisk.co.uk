@@ -39,9 +39,8 @@ There are different methods for testing, with people favouring different ends of
 
 ![testing pyramid](https://martinfowler.com/bliki/images/testPyramid/test-pyramid.png)
 
-
-
-I would tend to sway towards a heavy load on the unit tests and to use end to end as more smoke tests to test the whole things hasn't fallen, rather than relying havily on what are pretty fragile tests.
+I would tend to sway towards a heavy load on the unit tests and to use end to end as more smoke tests to test the whole things hasn't fallen, rather than relying heavily on what are pretty fragile tests.
+Unit tests by what they are, are a lot quicker to run, and usually more resilient so testing the actual code rather than testing your ability to write tests that can pass. E2E also require a lot more set up to be able to mimicreal world situations so for this purpose end up a lot more expensive to not just implement but to run aswell.
 
 Testing can be implemented on as a standalone before piecing it all together, for a long time I have in the past, when working on a php project, had phpunit tests running on a pre-commit hook and not part of a full pipeline, before we managed to have the time/budget to stitch things together automated.
 
