@@ -7,7 +7,7 @@ tags:
   - angular2
 banner: angular-webpack.png
 date: 2017-06-28 12:30:56
--------------------------
+---
 
 
 After a lot of messing with angular2 we have got to the point of releasing things into the wilds #exciting
