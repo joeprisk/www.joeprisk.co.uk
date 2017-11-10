@@ -38,7 +38,7 @@ We can then edit the main template to add in the tag manager code on each page (
 
 You are then able to add code into the checkout, where you have full liquid access to the order object. From admin -> settings -> Checkout. Find additional scripts at the end of 'order processing' section paste the contents in, adding you id in where nesscarry
 
-```
+```html
 <script>
 	dataLayer = [{
 		'transactionId': '{{ checkout.id }}',
