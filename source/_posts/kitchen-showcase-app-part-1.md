@@ -4,6 +4,7 @@ date: 2016-01-16T13:19:09.000Z
 tags:
   - node
   - angular
+  - stuff and things
 banner: raspberry-pi.jpg
 ---
 ### The problem
