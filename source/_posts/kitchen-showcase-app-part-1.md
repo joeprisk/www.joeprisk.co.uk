@@ -6,7 +6,7 @@ tags:
   - angular
 banner: raspberry-pi.jpg
 ---
-### The problem new stuff
+### The problem
 
 In our house we never know what to cook, so this is followed by googling for some recipe, then taking the laptop into the already cramped kitchen to work from.
 
