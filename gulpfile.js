@@ -10,6 +10,7 @@ gulp.task('build', (cb) => {
     runSequence(
         'twitter',
         'generate',
+        'admin-copy',
         'redirects',
         cb
     )
@@ -68,9 +69,15 @@ gulp.task('twitter', (cb) => {
 });
 
 gulp.task('redirects', (cb) => {
-    console.log("Moving all static hosts files");
+
     gulp.src("static/*")
         .pipe(gulp.dest('dist'));
+})
+
+gulp.task('admin-copy',() => {
+
+    gulp.src("source/admin/config.yml")
+        .pipe(gulp.dest('dist/admin'));
 
 
 });
