@@ -1,3 +1,6 @@
+---
+layout: false
+---
 <!doctype html>
 <html>
 <head>
@@ -12,5 +15,28 @@
 <body>
 <!-- Include the script that builds the page and powers Netlify CMS -->
 <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
+
+{% raw %}
+<script type="application/x-yaml" id="cms-yaml-config">
+
+backend:
+    name: git-gateway
+
+media_folder: "source/assets" # Folder where user uploaded files should go
+public_folder: "assets"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "source/_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Banner", name: "banner", widget: "image", required: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+</script>
 </body>
 </html>
