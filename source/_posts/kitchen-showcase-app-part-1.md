@@ -1,10 +1,10 @@
 ---
 title: kitchen showcase app (part 1)
-description: Wouldn't it be nice to sit on the sofa, find your recipe you want to make, then to have it displayed on the kitchen wall?
-date: 2016-01-16 13:19:09
-tags: 
-    - node 
-    - angular
+date: 2016-01-16T13:19:09.000Z
+tags:
+  - node
+  - angular
+  - stuff and things
 banner: raspberry-pi.jpg
 ---
 ### The problem
