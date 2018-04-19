@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.4.0"
+    "version": "3.7.1"
   },
   "scripts": {
     "build": "gulp build",
@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "gulp": "*",
+    "hexo-generator-sitemap": "^1.2.0",
     "run-sequence": "^1.2.2",
     "twitter": "^1.7.0"
   }
