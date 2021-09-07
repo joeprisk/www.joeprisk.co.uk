@@ -11,25 +11,25 @@ date: 2017-03-07 12:27:56
 
 # continuous deployment
 
-Continuous deployment isn't just pushing code!
+Continuous deployment isn’t just pushing code!
 
-On the surface it sounds a simple idea, make lots of small changes and always push them direct to live.
+On the surface, it sounds like a simple idea, make lots of small changes and always push them directly to live.
 
-In reality there is a lot more to it than just pushing code to live. Personally it has taken a long time with messing with different methods and tools to find a suite that I'm happy with and that works in a way that fits around other working practices.
+In reality, there is a lot more to it than just pushing code to live. Personally, it has taken a long time with messing with different methods and tools to find a suite that I’m happy with and that works in a way that fits around other working practices.
 
-A large part of the problem I've faced, is the lack of budget when it comes to implementing a continuous deployment pipeline. Fear not, You can implement a Continuous Deployment pipeline on a shoestring budget, but it takes time, and don't think a client is going to want to pay for you to set it all up at once.
+A large part of the problem I’ve faced is the lack of budget when it comes to implementing a continuous deployment pipeline. Fear not, You can implement a Continuous Deployment pipeline on a shoestring budget, but it takes time, and don’t think a client is going to want to pay for you to set it all up at once.
 
-you have to be inventive, and implement small pieces of the ouzzle at a time, in time you will, hopefully, end up with a better understanding of what you are doing and a better solution had you tried to do it all up front, the same way we don't do prince2 as at the beginning you really don't know what the end will look like, and nor should you.
+you have to be inventive, and implement small pieces of the puzzle at a time, in time you will, hopefully, end up with a better understanding of what you are doing and a better solution had you tried to do it all upfront, the same way we don’t do prince2 as at the beginning you don’t know what the end will look like, and nor should you.
 
 There are lots of different parts, and then many parts within those parts, just going to outline at a high level some of those steps along the way, if we use a front end stack to run through this is something most people will have some insight into in some way, whether they understand all the intricacies or not.
 
 ## Build process
 
-An important part, for obvious reasons is the build pipeline, some may argue it is continuous deployment, in my thoughts this is just a part of it. gone are the old days, and rightly so, of manually ftping files to a server. These days, with the glorious rise of nodejs creating an automated build is a relatively straight forward thing.
+An important part, for obvious reasons, is the build pipeline, some may argue it is continuous deployment, in my thoughts, this is just a part of it. gone are the old days, and rightly so, of manually FTPing files to a server. These days, with the glorious rise of nodeJS creating an automated build is a relatively straightforward thing.
 
-I would sway towards webpack at the moment for js + css, but still more au fait with gulp as a task runner, and separate tools to concat and minify the code as needed, along with all the other tools.
+I would sway towards WebPack at the moment for JS + CSS, but still more au fait with gulp as a task runner, and separate tools to concatenate and minify the code as needed, along with all the other tools.
 
-Building static front end templates is also relatively painless process, there are many templating engines that can be run server and client side, nunjucks being my favourite this week, with the added bonus of being able to precompile templates on the server, cutting down the file size and work on the client side.
+Building static front end templates is also a relatively painless process, there are many templating engines that can be run server and client-side, Nunjucks being my favourite this week, with the added bonus of being able to precompile templates on the server, cutting down the file size and work on the client-side.
 
 ## Automated testing
 
