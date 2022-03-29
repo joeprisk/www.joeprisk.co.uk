@@ -23,13 +23,13 @@ async function getTweets() {
 
   const twitterHandle = 'joeprisk';
 
+  return new Promise(resolve => {
   client.get(
     `statuses/user_timeline`,
     { screen_name: twitterHandle, count: 5 },
-    (error: any, data: any[]) => {
+    function (_error, data) {
 
-      console.log({ error, data })
-      const tweets = data.map(({ text, id_str, created_at }: any) => ({
+      const tweets = data.map(({ text, id_str, created_at }) => ({
         text,
         url: `https://twitter.com/${twitterHandle}/status/${id_str}`,
         created: created_at.substring(0, created_at.length - 11)
@@ -39,7 +39,10 @@ async function getTweets() {
         "./source/_data/tweets.json",
         JSON.stringify(tweets, null, 2)
       );
+
+      resolve();
     });
+  });
 }
 
 async function generate() {
