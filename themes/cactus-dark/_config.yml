@@ -1,9 +1,9 @@
 nav:
   Home: /
   About: /about-me/
-  Projects: http://github.com/kernowjoe
+  Projects: http://github.com/joeprisk
 
-projects_url: http://github.com/kernowjoe
+projects_url: http://github.com/joeprisk
 
 customize:
     gravatar:
@@ -26,7 +26,7 @@ customize:
         url: /images/apple-touch-icon.png
         gravator: false
     social_links:
-        github: https://github.com/kernowjoe
+        github: https://github.com/joeprisk
         twitter: https://twitter.com/joeprisk
         linkedin: https://www.linkedin.com/in/joe-prisk-b9a7252a
         bicycle: https://www.strava.com/athletes/561031
